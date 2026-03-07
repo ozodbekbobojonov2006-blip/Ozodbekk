@@ -106,4 +106,4 @@ class Transaction(models.Model):
 
     class Meta:
         verbose_name = "kelishuv"
-        verbose_name_plural = "kelishuvlar"
+        verbose_name_plural = "kelishuvlar"     
