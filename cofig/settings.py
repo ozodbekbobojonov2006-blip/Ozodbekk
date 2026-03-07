@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'ckeditor',
     'management',
     'Blog',
+    'Rentit',
 ]
 
 MIDDLEWARE = [
@@ -80,7 +81,7 @@ WSGI_APPLICATION = 'cofig.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Ozodbek',  # Skrinshotda baza nomi Ozodbek ekanligi ko'rindi
+        'NAME': 'ozod',  # Skrinshotda baza nomi Ozodbek ekanligi ko'rindi
         'USER': 'bobojonov',
         'PASSWORD': '2022', # O'zingiz qo'ygan parol
         'HOST': '127.0.0.1',

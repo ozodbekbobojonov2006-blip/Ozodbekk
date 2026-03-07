@@ -75,3 +75,4 @@ class Order(models.Model):
             return self.quantity * self.product.price
         return 0
     
+
