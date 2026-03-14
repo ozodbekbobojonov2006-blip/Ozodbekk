@@ -1,4 +1,4 @@
-from .models import Address
+from .models import Address,Post
 from rest_framework import serializers
 
 class AdressSerilazers(serializers.ModelSerializer):
@@ -10,4 +10,9 @@ class AdressSerilazers(serializers.ModelSerializer):
     def get_name(self,obj):
         return f'{obj.city} {obj.street}'    
 
-
+class postserializers(serializers.ModelSerializer):
+    name=serializers.SerializerMethodField(read_only=True)
+    class Meta:
+        model=Post
+        fields='__all__'
+              

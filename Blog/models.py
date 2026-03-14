@@ -58,7 +58,7 @@ class Profile(models.Model):
     address = models.ForeignKey(Address, on_delete=models.SET_NULL, null=True, blank=True)
     image = models.ImageField(upload_to='profile_pics', blank=True, null=True)
     email = models.EmailField(blank=True)
-    bio = RichTextField(blank=True)
+    bio = RichTextField(blank=True)                #jenerik API da
 
     def __str__(self):
         return self.user.username
@@ -109,7 +109,7 @@ class Post(BaseModel):
 
     views = models.PositiveIntegerField(default=0)
 
-    pub_date = models.DateTimeField(null=True, blank=True, editable=False)
+    pub_date = models.DateTimeField(null=True, blank=True, editable=False)          #jenerik API da 
 
     # ---------- SAVE LOGIC ----------
     def save(self, *args, **kwargs):
@@ -157,4 +157,5 @@ class Like(BaseModel):
 
     def __str__(self):
         return f"{self.user} ❤️"
+    #post statusi confirm bolgan postningn egalarini ciqariw
     
