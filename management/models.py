@@ -130,8 +130,42 @@ class Warnings(models.Model):
     money=models.IntegerField(verbose_name='summa')
     is_active=models.BooleanField(default=True,verbose_name='tasdiq')
     
+# class product(models.Model):
+#     name=models.CharField(verbose_name='ism',max_length=100)
+#     price=models.IntegerField(verbose_name='narx')
+#     surog=models.CharField(max_length=100)
+#
+# class category(models.Model):
+#     name=models.ForeignKey(product,on_delete=models.CASCADE,verbose_name='narx')
+#     description=models.TextField(max_length=100,verbose_name='narx')
+#
+#
+# class order(models.Model):
+#     order_number=models.IntegerField(verbose_name='narx')
+#     product=models.ForeignKey(product,on_delete=models.CASCADE,verbose_name='maxsulot')
+#     time=models.DateTimeField(auto_now=True)
+#     narx_turi=models.CharField(max_length=100,verbose_name='narx')
+#     qarz=models.TextField(max_length=100,verbose_name='qarz')
+#     is_active=models.BooleanField(default=True,verbose_name='tasdiq')
+#
+#
+# class order_items(models.Model):
+#     product=models.ForeignKey(product,on_delete=models.CASCADE,verbose_name='maxsulot')
+#     time=models.DateTimeField(auto_now=True)
+#     order=models.ForeignKey(order,on_delete=models.CASCADE,verbose_name='narx')
+#
 
-    
+
+
+
+
+
+
+
+
+
+
+
 
 
 
