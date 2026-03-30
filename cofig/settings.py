@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'management',
     'Blog',
     'Rentit',
-    'biblioteka'
+    'biblioteka',
+    'liga'
 ]
 
 MIDDLEWARE = [
