@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'Blog',
     'Rentit',
     'biblioteka',
-    'liga'
+    'liga',
+    'club'
 ]
 
 MIDDLEWARE = [
